@@ -24,6 +24,6 @@ Pengguna bisa memberi rating, komentar, dan reaksi emoji. Ada juga preview proje
 
 ## 🚀 Luncurkan Web
 
--
+![LINK](https://lucyy28.github.io/Feedback-Web/)
 
 
