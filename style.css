@@ -1,0 +1,227 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f9f9ff, #e6e6f9);
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #4f46e5;
+  text-align: center;
+}
+
+/* Grid utama */
+.main-grid {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+/* Kolom form (kiri) dan ads (kanan) */
+.form-section {
+  flex: 2;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 0;
+}
+
+.project-ads {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 0;
+}
+
+.project-ads h3 {
+  margin-bottom: 1rem;
+  color: #4f46e5;
+}
+
+.project-card {
+  background: #f9f9ff;
+  border-left: 4px solid #4f46e5;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  background-color: #ddd;
+}
+
+
+.project-card h4 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.project-card a {
+  color: #4f46e5;
+  text-decoration: underline;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #3d36c8;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.rating img {
+  margin: 0 5px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.rating img.selected {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
+
+.feedback-list-section {
+  margin-top: 3rem;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-left: 5px solid #4f46e5;
+}
+.chibi-box {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.chibi-box img {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.chibi-box p {
+  font-size: 1rem;
+  color: #444;
+}
+
+
+/* 💡 MEDIA QUERY: untuk HP atau layar kecil */
+@media (max-width: 768px) {
+  .main-grid {
+    flex-direction: column;
+  }
+
+  .form-section, .project-ads {
+    width: 100%;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .rating {
+    flex-wrap: wrap;
+  }
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content small {
+  display: block;
+  color: #888;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.emoji-display {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+.project-ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#viewBox {
+  background: #f3f4f6;
+  padding: 1rem;
+  margin-top: auto;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}

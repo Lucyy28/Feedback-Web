@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masukan untuk Web Saya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Kritikan dan Saran Untuk Project Lucy Foxter ✨</h1>
+    <p>Berikan pendapat jujurmu. Rating, saran, atau emoji boleh kok.</p>
+
+    <div class="main-grid">
+      <!-- Form Feedback -->
+      <section class="form-section">
+        <form id="feedbackForm">
+          <input type="text" id="name" placeholder="Nama kamu (opsional)" />
+          <textarea id="comment" placeholder="Apa pendapatmu?" required></textarea>
+
+          <div class="rating">
+            <img src="https://img.icons8.com/emoji/32/star-emoji.png" data-value="1" />
+            <img src="https://img.icons8.com/emoji/32/star-emoji.png" data-value="2" />
+            <img src="https://img.icons8.com/emoji/32/star-emoji.png" data-value="3" />
+            <img src="https://img.icons8.com/emoji/32/star-emoji.png" data-value="4" />
+            <img src="https://img.icons8.com/emoji/32/star-emoji.png" data-value="5" />
+          </div>
+          <input type="hidden" id="rating" required />
+
+          <div class="reaction">
+            <label>Perasaan kamu: </label>
+            <select id="emoji">
+              <option value="😍">😍</option>
+              <option value="🙌">🙌</option>
+              <option value="🤔">🤔</option>
+              <option value="😴">😴</option>
+              <option value="👎">👎</option>
+            </select>
+          </div>
+
+          <button type="submit">Kirim Masukan</button>
+        </form>
+
+        <div class="chibi-box">
+          <img src="img/chibby.png" alt="chibi" />
+          <p>“Lebih banyak masukan lebih semangat lagi buat project!”</p>
+        </div>
+      </section>
+
+      <!-- Project "iklan" di kanan -->
+      <aside class="project-ads">
+  <h3>🔧 Lihat Project Saya</h3>
+
+  <div class="project-card">
+    <img src="img/project1.png" alt="Portfolio" />
+    <h4>🖐️ Deteksi Jari Tangan</h4>
+    <a href="https://github.com/Lucyy28/Camera-Scanner" target="_blank">Lihat Di Github</a>
+  </div>
+
+  <div class="project-card">
+    <img src="img/webprofile.png" alt="To-Do App" />
+    <h4>🙍 Profile Web</h4>
+    <a href="https://lucyy28.github.io/My-Web-1/" target="_blank">Lihat Sekarang</a>
+  </div>
+
+  <div class="project-card">
+    <img src="img/project3.png" alt="Dashboard UI" />
+    <h4>🎊 Birthday Web</h4>
+    <a href="https://lucyy28.github.io/happy-birthday-2/" target="_blank">Lihat Sekarang</a>
+  </div>
+
+  <div id="viewBox">
+    <p>👀 Dilihat <span id="viewCounter">0</span> kali</p>
+  </div>
+</aside>
+
+      
+    </div>
+
+    <section class="feedback-list-section">
+      <h2>📝 Masukan dari Pengunjung</h2>
+      <div id="feedbackList" class="feedback-list"></div>
+    </section>
+  </main>
+</body>
+</html>
